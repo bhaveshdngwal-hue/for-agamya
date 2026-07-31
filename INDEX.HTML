@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy National Girlfriend Day, Agamya ❤️</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+  <div id="preloader">
+    <div class="loader-content">
+      <div class="heartbeat-loader">❤️</div>
+      <p>Crafting a luxury experience for Agamya...</p>
+    </div>
+  </div>
+
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-outline" id="cursor-outline"></div>
+
+  <canvas id="ambient-canvas"></canvas>
+  <canvas id="fireworks-canvas"></canvas>
+
+  <header class="top-nav">
+    <div class="logo">A & M</div>
+    <div class="nav-controls">
+      <button id="theme-toggle" aria-label="Toggle Theme"><i class="fa-solid fa-moon"></i></button>
+      <button id="music-toggle" aria-label="Toggle Music"><i class="fa-solid fa-music"></i></button>
+    </div>
+  </header>
+
+  <audio id="bg-music" loop>
+    <source src="The Neighbourhood - Sweater Weather (Lyrics).mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="mini-player glass-card">
+    <div class="album-art pulse-glow">
+      <i class="fa-solid fa-compact-disc fa-spin"></i>
+    </div>
+    <div class="player-info">
+      <span class="track-title">Our Favorite Song</span>
+      <span class="track-sub">Agamya & Me</span>
+    </div>
+    <div class="player-controls">
+      <button id="play-pause-btn"><i class="fa-solid fa-play"></i></button>
+      <input type="range" id="volume-slider" min="0" max="1" step="0.1" value="0.7">
+    </div>
+  </div>
+
+  <main>
+    <section class="hero-section" id="hero">
+      <div class="hero-card glass-card scroll-reveal">
+        <span class="hero-badge">National Girlfriend Day</span>
+        <h1 class="glow-title">Happy National Girlfriend Day, Agamya ❤️</h1>
+        <p class="subtitle">"Every love story is beautiful, but ours is my favorite."</p>
+        <a href="#counter" class="btn-primary ripple">Begin Our Journey <i class="fa-solid fa-arrow-down"></i></a>
+      </div>
+    </section>
+
+    <section class="section-container scroll-reveal" id="counter">
+      <h2 class="section-title">Time Spent in Love</h2>
+      <div class="counter-grid">
+        <div class="glass-card counter-box">
+          <span id="days" class="counter-num">00</span>
+          <span class="counter-label">Days</span>
+        </div>
+        <div class="glass-card counter-box">
+          <span id="hours" class="counter-num">00</span>
+          <span class="counter-label">Hours</span>
+        </div>
+        <div class="glass-card counter-box">
+          <span id="minutes" class="counter-num">00</span>
+          <span class="counter-label">Minutes</span>
+        </div>
+        <div class="glass-card counter-box">
+          <span id="seconds" class="counter-num">00</span>
+          <span class="counter-label">Seconds</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-container scroll-reveal" id="letter">
+      <h2 class="section-title">A Heartfelt Letter</h2>
+      <div class="envelope-container">
+        <div class="envelope" id="envelope">
+          <div class="envelope-cover">
+            <i class="fa-solid fa-heart envelope-heart"></i>
+            <p>Click to Open Envelope</p>
+          </div>
+          <div class="letter-content">
+            <h3 class="handwritten-title">Dear Agamya,</h3>
+            <p id="typewriter-text" class="handwritten-text"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-container scroll-reveal" id="gallery">
+      <h2 class="section-title">Our Memory Gallery</h2>
+      <div class="gallery-grid">
+        <div class="polaroid-card tilt-effect">
+          <img src="753747556_1638155824495622_1527803821650882268_n.jpg" alt="Agamya and Me Photo 1" class="gallery-img">
+          <p class="caption">Warm Smiles & Hoodies ✨</p>
+        </div>
+        <div class="polaroid-card tilt-effect">
+          <img src="753864826_1630061158777129_7296779520919782495_n.jpg" alt="Agamya and Me Photo 2" class="gallery-img">
+          <p class="caption">Bright Moments Together 🌹</p>
+        </div>
+        <div class="polaroid-card tilt-effect">
+          <img src="757880357_4297602803796600_2561666215873852432_n.jpg" alt="Agamya and Me Photo 3" class="gallery-img">
+          <p class="caption">Sunlight & Flower Memories 🌸</p>
+        </div>
+        <div class="polaroid-card tilt-effect">
+          <img src="759715363_4499846330234041_6176756133450312050_n.jpg" alt="Agamya and Me Photo 4" class="gallery-img">
+          <p class="caption">Holding Hands Forever 💫</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-container scroll-reveal" id="timeline">
+      <h2 class="section-title">Our Romantic Timeline</h2>
+      <div class="timeline-container">
+        <div class="timeline-item glass-card">
+          <div class="timeline-icon">✨</div>
+          <h3>First Smile</h3>
+          <p>The unforgettable day your bright smile captured my heart completely.</p>
+        </div>
+        <div class="timeline-item glass-card">
+          <div class="timeline-icon">📸</div>
+          <h3>First Selfie</h3>
+          <p>Capturing our very first picture together, preserving a moment to hold forever.</p>
+        </div>
+        <div class="timeline-item glass-card">
+          <div class="timeline-icon">🌹</div>
+          <h3>First Date</h3>
+          <p>Conversations that felt effortlessly warm, marking the start of our journey.</p>
+        </div>
+        <div class="timeline-item glass-card">
+          <div class="timeline-icon">🤝</div>
+          <h3>First Hand Hold</h3>
+          <p>A quiet reassurance that we are walking this path together side by side.</p>
+        </div>
+        <div class="timeline-item glass-card">
+          <div class="timeline-icon">♾️</div>
+          <h3>Endless Memories</h3>
+          <p>Building a lifetime of laughter, comfort, and unconditional love with Agamya.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-container scroll-reveal" id="reasons">
+      <h2 class="section-title">Reasons I Love You</h2>
+      <div class="reasons-grid">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front glass-card">
+              <i class="fa-solid fa-heart pulse-icon"></i>
+              <h3>Your Smile</h3>
+            </div>
+            <div class="flip-card-back glass-card">
+              <p>It instantly brightens up my day, no matter how tough things get.</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front glass-card">
+              <i class="fa-solid fa-heart pulse-icon"></i>
+              <h3>Your Kindness</h3>
+            </div>
+            <div class="flip-card-back glass-card">
+              <p>The genuine warmth and gentle care you give to everyone around you.</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front glass-card">
+              <i class="fa-solid fa-heart pulse-icon"></i>
+              <h3>Your Eyes</h3>
+            </div>
+            <div class="flip-card-back glass-card">
+              <p>Looking into your eyes feels like coming home to safety and peace.</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front glass-card">
+              <i class="fa-solid fa-heart pulse-icon"></i>
+              <h3>Your Care</h3>
+            </div>
+            <div class="flip-card-back glass-card">
+              <p>How deeply you look after me and make sure I am always supported.</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front glass-card">
+              <i class="fa-solid fa-heart pulse-icon"></i>
+              <h3>Your Voice</h3>
+            </div>
+            <div class="flip-card-back glass-card">
+              <p>My favorite sound in the world that calms every storm inside me.</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front glass-card">
+              <i class="fa-solid fa-heart pulse-icon"></i>
+              <h3>Everything About You</h3>
+            </div>
+            <div class="flip-card-back glass-card">
+              <p>Every small detail, every quiet habit, and every single thing you do.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-container scroll-reveal" id="pickup-lines">
+      <h2 class="section-title">Sweet Whispers 😉</h2>
+      <div class="glass-card pickup-box">
+        <p id="pickup-text" class="pickup-text">"Are you Google? Because you've got everything I've been searching for."</p>
+      </div>
+    </section>
+
+    <section class="section-container text-center scroll-reveal" id="surprises">
+      <button id="surprise-btn" class="btn-glow ripple">Click For A Surprise ❤️</button>
+      <button id="secret-btn" class="btn-secondary ripple">Hidden Secret Message 🔒</button>
+    </section>
+  </main>
+
+  <div id="secret-modal" class="modal">
+    <div class="modal-content glass-card">
+      <span class="close-modal">&times;</span>
+      <h2>A Secret Message For Agamya</h2>
+      <p>"No matter where life takes us, you'll always have a special place in my heart. ❤️"</p>
+    </div>
+  </div>
+
+  <div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img id="lightbox-img" src="" alt="Enlarged Memory View">
+  </div>
+
+  <section class="final-section text-center">
+    <div class="final-content">
+      <h1 class="glow-title">❤️ Happy National Girlfriend Day ❤️</h1>
+      <h2 class="section-title">Agamya</h2>
+      <p class="subtitle">"Thank you for being one of the most beautiful chapters of my life."</p>
+    </div>
+  </section>
+
+  <footer class="main-footer text-center">
+    <p>❤️ Made with Endless Love</p>
+    <p class="credit">Credit — Made by your husband <span class="glowing-heart-icon">💍</span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
